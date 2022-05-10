@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="usd">
+<p id="result">0</p>
+<button onclick="tien()" id="change">click</button>
+<script>
+    function tien() {
+        let a = document.getElementById("usd").value;
+        let tien= 23000*parseInt(a);
+        console.log("so tien doi ra la :" + tien);
+        document.getElementById("result").innerText =sum;
+
+
+    }
+</script>
+
 </body>
 </html>

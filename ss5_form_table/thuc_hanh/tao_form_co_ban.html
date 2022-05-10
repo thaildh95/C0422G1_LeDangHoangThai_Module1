@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tao form co ban</title>
+    <style>
+
+
+        body{
+            margin: 0;
+        padding: 0;}
+    div{
+            margin:40px auto;
+            width: 250px;
+            height: 500;
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px 5px gainsboro;
+            padding: 20px;
+    }
+
+    </style>
 </head>
 <body>
-$END$
+    <div
+
+    <form method="get" action="tao_form_co_ban.html">
+        <h1 <u> Order Form</h1>
+        <p>what would you  like to buy?</p>
+        <select>
+            <option value="">A</option>
+            <option value="">B </option>
+            <option value="">C</option>
+        </select>
+        <p> how many would you like to order </p>
+            <input type="radio" name ="many" >1 - $10 <br>
+            <input type="radio" name ="many" >2 - $20 <br>
+            <input type="radio" name ="many" >3 - $25 <br>
+        <p> Name <span style="color: red">*</span></p>
+            <input type="text" name="first name" placeholder="first name"/>
+            <input type="text" name="last name" placeholder="last name"/>
+        <p> Email <span style="color: red">*</span></p>
+            <input type="text" name="email" placeholder="email"/>
+        <p> Phone number <span style="color: red">*</span></p>
+            <input type="text" name="phone1" size="5">-
+            <input type="text" name="phone2" size="5">-
+            <input type="text" name="phone3" size="5">
+        <p><input type="submit" value="submit" style="background-color: lawngreen"/></p>
+
+
+
+
+
+    </form>
+
+
+</div>
 </body>
 </html>

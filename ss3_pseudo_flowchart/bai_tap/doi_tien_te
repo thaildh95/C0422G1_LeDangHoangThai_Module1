@@ -1,0 +1,6 @@
+1.	chuyển đổi tiền tệ từ usd sang vnd
+2.	BEGIN
+3.	INPUT usd
+4.	vnd= 23000*usd
+5.	DISPLAY "vnd"
+6.	END

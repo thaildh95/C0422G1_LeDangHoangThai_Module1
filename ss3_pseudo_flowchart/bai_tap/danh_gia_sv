@@ -1,0 +1,14 @@
+1.	Đánh giá phân loại sinh viên
+2.	BEGIN
+3.	INPUT diem
+4.		IF diem < 35
+5.		DISPLAY " sinh vien loai E "
+6.			IF 45>diem>=35
+7.			DISPLAY " sinh vien loai D"
+8.				IF 60>diem>=45
+9.				DISPLAY " sinh vien loai C"
+10.					IF 75>diem>=60
+11.					DISPLAY " sinh vien loai B"
+12.						IF diem >=75
+13.						DISPLAY " sinh vien loai A"
+14.	END

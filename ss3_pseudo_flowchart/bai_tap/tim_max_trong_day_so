@@ -1,0 +1,8 @@
+1.	Tìm số lớn nhất trong dãy n số
+2.	BEGIN
+3.	INPUT a0,a1,a2…an
+4.	a0=max
+5.	while i< n
+6.		IF ai > max
+7.		DISPLAY “ ai là max “
+8.	END

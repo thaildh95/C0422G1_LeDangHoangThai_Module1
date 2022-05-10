@@ -1,0 +1,9 @@
+1.	Tìm số lớn nhất trong 3 số a b c
+2.	BEGIN
+3.	INPUT a,b,c
+4.	max = a
+5.		IF b > max
+6.		DISPLAY " b la so lon nhat "
+7.			IF c > max
+8.			DISPLAY " c la so lon nhat "
+9.	END

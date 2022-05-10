@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        div{
+            border: 1px solid white;
+            padding: 110px;
+            margin: 100px;
+            text-align: center;
+            color: white;
+            background-color: coral;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div>
+    <h1 style="color: white">Chuong trinh doi nhiet do</h1>
+<input type="text" id="doC"> <b>Nhap do C</b>
+<p id="doF">0</p>
+<button onclick="nhietdo()" type="button">Change</button>
+</div>
+<script>
+    function nhietdo() {
+        let a = document.getElementById('doC').value;
+        let change = 32 + 1.8* a;
+
+        console.log('do F =' + change);
+        document.getElementById('doF').innerHTML = change;
+    }
+</script>
 </body>
 </html>

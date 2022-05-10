@@ -1,0 +1,7 @@
+1.	Tính trung bình tổng điểm toán lí hóa
+2.
+3.	BEGIN
+4.	INPUT math,physics,chemistry
+5.	avarage = (math + physics + chemistry) / 3
+6.	OUTPUT " avarage "
+7.	END
