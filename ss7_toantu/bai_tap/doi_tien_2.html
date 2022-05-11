@@ -13,6 +13,15 @@
             text-align: center;
             width: 500px;
             height: 300px;
+
+        }
+        p{
+            background-color: white;
+            border: 1px solid black;
+            width: 40%;
+            margin: 40px auto;
+            color: coral;
+
         }
     </style>
 
@@ -57,13 +66,13 @@
         let To = document.getElementById('to').value;
         let result;
         if (From == "usd" && To == "vnd") {
-            result = 23000 * A;
+            result = 23000 * A +'(VND)';
         } else if (From == "vnd" && To == "usd") {
-            result = A/23000;
+            result = A/23000 +'($)';
         } else if (From == "vnd" && To == "vnd"){
-        result =A;
+        result =A +'(VND)';
         } else {
-        result = A;
+        result = A +'($)';
     }
     document.getElementById('ketqua').innerHTML= result;
     }

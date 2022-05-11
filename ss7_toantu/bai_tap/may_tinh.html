@@ -58,7 +58,7 @@
         </td>
         <td>
             <button
-                    type="button">AC</button>
+                    type="button" onclick="xoa();">AC</button>
         </td>
     </tr>
     <tr>
@@ -72,16 +72,16 @@
             <button type="button">Ln</button>
         </td>
         <td>
-            <button type="button">7</button>
+            <button type="button" name="nut" value="7" onclick="inputValue(this.value)">7</button>
         </td>
         <td>
-            <button type="button" ">8</button>
+            <button type="button" name="nut" value="8" onclick="inputValue(this.value)">8</button>
         </td>
         <td>
-            <button type="button" ">9</button>
+            <button type="button" name="nut" value="9" onclick="inputValue(this.value)">9</button>
         </td>
         <td>
-            <button  type="button" >:</button>
+            <button  type="button" name="tinh" value="/" onclick="inputValue(this.value)">/</button>
         </td>
     </tr>
 
@@ -96,16 +96,16 @@
             <button type="button">Log</button>
         </td>
         <td>
-            <button type="button">6</button>
+            <button type="button" name="nut" value="6" onclick="inputValue(this.value)">6</button>
         </td>
         <td>
-            <button type="button">5</button>
+            <button type="button" name="nut" value="5" onclick="inputValue(this.value)">5</button>
         </td>
         <td>
-            <button type="button">4</button>
+            <button type="button" name="nut" value="4" onclick="inputValue(this.value)">4</button>
         </td>
         <td>
-            <button type="button">X</button>
+            <button type="button" name="tinh" value="*" onclick="inputValue(this.value)">*</button>
         </td>
     </tr>
     <tr>
@@ -119,16 +119,16 @@
             <button type="button">√</button>
         </td>
         <td>
-            <button type="button">1</button>
+            <button type="button" name="nut" value="1" onclick="inputValue(this.value)">1</button>
         </td>
         <td>
-            <button type="button">2</button>
+            <button type="button" name="nut" value="2" onclick="inputValue(this.value)">2</button>
         </td>
         <td>
-            <button type="button">3</button>
+            <button type="button" name="nut" value="3" onclick="inputValue(this.value)">3</button>
         </td>
         <td>
-            <button type="button">-</button>
+            <button type="button" name="tinh" value="-" onclick="inputValue(this.value)">-</button>
         </td>
     </tr>
     <tr>
@@ -142,21 +142,33 @@
             <button type="button">x&ordf;</button>
         </td>
         <td>
-            <button type="button">0</button>
+            <button type="button" name="nut" value="0" onclick="inputValue(this.value)">0</button>
         </td>
         <td>
             <button type="button">.</button>
         </td>
         <td>
-            <button type="button" onclick="ketqua">=</button>
+            <button type="button" name="ketqua" onclick="ketqua();">=</button>
         </td>
         <td>
-            <button type="button">+</button>
+            <button type="button" name="tinh" value="+" onclick="inputValue(this.value)">+</button>
         </td>
     </tr>
 </div>
 </table>
 
-<script></script>
+<script>
+    let view = document.getElementById("number");
+    function inputValue(value) {
+        view.value += value;
+    }
+    function ketqua() {
+        let ketqua = eval(view.value);
+        view.value = ketqua;
+    }
+    function xoa() {
+        view.value="";
+    }
+</script>
 </body>
 </html>

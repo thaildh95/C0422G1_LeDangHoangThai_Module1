@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let username = prompt('nhap id','');
+    if (username == 'admin'){
+        let pass = prompt('nhap mat khau','');
+        if(pass == 'hoangthai')
+        {
+            alert('mat khau chinh xac xin chao master!');
+        }
+            else if (pass != 'hoangthai')
+            {
+                alert('mat khau khong chinh xac !');
+            }
+    }
+    else  if(username == 'null')
+    {
+            alert('canceled');
+    }else {
+        alert('toi khong biet ban la ai xin moi ra cho khac');
+    }
+</script>
+
+</body>
+</html>
