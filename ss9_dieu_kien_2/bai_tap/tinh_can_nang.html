@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 20px auto;
+            padding: 0;
+        }
+        div{
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 1px 1px 5px;
+            background-color: aliceblue;
+        }
+        input{
+            box-shadow: 1px 1px 3px;
+            border: 2px solid black;
+
+        }
+        button{
+            width: 80px;
+            height: 25px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<div id="bang1">
+<form>
+    <h1>BMI</h1>
+    <select>
+        <option>Nam</option>
+        <option>Nữ</option>
+    </select>
+    <br>
+    <p>Cân nặng</p>
+    <input type="text" id="nang">
+
+    <p>Chiều cao</p>
+    <input type="text" id="cao">
+    <p id="result">......</p>
+    <button type="button" onclick="kiemtra()">BMI</button>
+
+
+</form>
+</div>
+<script>
+
+    function kiemtra() {
+        let a = document.getElementById('nang').value;
+        let b = document.getElementById('cao').value;
+        let bmi = a/(b*b);
+        if (bmi >= 30){
+            document.getElementById('result').innerHTML =  'béo';
+
+        }else if(bmi>=25) {
+            document.getElementById('result').innerHTML = 'hơi béo';
+        }else  if(bmi > 18.5) {
+            document.getElementById('result').innerHTML = 'bình thường';
+
+        } else {
+            document.getElementById('result').innerHTML = 'gầy';
+        }
+
+      }
+
+</script>
+<body>
+
+</body>
+</html>

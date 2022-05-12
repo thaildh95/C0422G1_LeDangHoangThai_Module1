@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="vung">
+    <option>Nội địa</option>
+    <option>Liên tỉnh</option>
+
+</select>
+    <p>Nhập số phút đã gọi</p>
+    <input type="text" id="phut">
+    <button onclick="cuocdt()">click</button>
+    <p id="result">0</p>
+<script>
+
+
+    function cuocdt() {
+        let area = document.getElementById('vung').value;
+        let time = document.getElementById('phut').value;
+        let tiendt;
+        let cuoc;
+
+        switch (area) {
+            case "Nội địa": cuoc =220; break;
+            case "Liên tỉnh" : cuoc =770; break;
+        }
+        tiendt = cuoc*time;
+        document.getElementById('result').innerHTML = 'tien dien thoai la : ' + tiendt;
+
+        }
+
+</script>
+</body>
+</html>

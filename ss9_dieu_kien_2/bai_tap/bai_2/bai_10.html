@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let so = parseInt(prompt('Mời nhập số điện đã dùng'))
+    if(so>0 && so<50){
+
+        alert('Tiền điện tháng này là : ' +so*3000+'Đ');
+    }else if(50<so && 100>so) {
+        alert('Tiền điện tháng này là : ' +so*5000 + 'Đ');
+    }else  if(so>100){
+        alert('Tiền điện tháng này là : ' +so* 10000 + 'Đ');
+
+    }else{
+        alert('Mời nhập lại số điện');
+    }
+
+
+
+</script>
+</body>
+</html>

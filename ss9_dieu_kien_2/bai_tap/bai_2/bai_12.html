@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="thoigian">
+    <option>1_tháng</option>
+    <option>3_tháng</option>
+    <option>6_tháng</option>
+    <option>12_tháng</option>
+    <option>18_tháng</option>
+    <option>24_tháng</option>
+    <option>32_tháng</option>
+
+
+</select>
+<p>Nhập số tiền cần vay</p>
+<input type="text" id="no">
+<button onclick="lai()">click</button>
+<p id="result">0</p>
+<script>
+
+
+    function lai() {
+        let thangno = document.getElementById('thoigian').value;
+        let tienno = document.getElementById('no').value;
+        // alert(tienno)
+        let tienlai;
+        let laisuat;
+
+        switch (thangno) {
+            case "1_tháng": laisuat =0.1; break;
+            case "3_tháng": laisuat =0.15; break;
+            case "6_tháng": laisuat =0.2; break;
+            case "12_tháng": laisuat =0.25; break;
+            case "18_tháng": laisuat =0.3; break;
+            case "24_tháng": laisuat =0.35; break;
+            case "32_tháng": laisuat =0.4; break;
+
+
+        }
+        // alert(thangno)
+        // alert(laisuat)
+
+        tienlai = tienno*laisuat;
+        alert(tienlai)
+
+        document.getElementById('result').innerHTML = 'Tiền lãi phải trả : ' + tienlai;
+
+    }
+
+</script>
+</body>
+</html>

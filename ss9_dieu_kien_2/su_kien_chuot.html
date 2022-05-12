@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="myimg" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" style = "width: 30%">
+    <p>click me to move right--></p>
+    <input type="button" onclick="moveRight()" value="click me"></input>
+
+</form>
+<script>
+    let move = null;
+    move = document.getElementById('myimg');
+    function init() {
+        move = document.getElementById('myimg');
+        move.style.position = 'relative';
+        move.style.left = '0px';
+
+    }
+    function moveRight() {
+        move.style.left = parseInt(move.style.left) + 30 + 'px';
+
+    }
+    window.onload = init;
+</script>
+</body>
+</html>
