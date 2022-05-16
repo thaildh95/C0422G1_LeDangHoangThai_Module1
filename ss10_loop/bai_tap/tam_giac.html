@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    var star = '*'
+    var triangle = ''
+    var space = '&nbsp&nbsp'
+    for (i = 1; i < 10; i++) {
+        for (j = 1; j < 10 - i; j++)
+        {
+            triangle += star
+        }
+
+        triangle += space
+        document.write(triangle + '<br>')
+        triangle = ''
+    }
+</script>
+</body>
+</html>

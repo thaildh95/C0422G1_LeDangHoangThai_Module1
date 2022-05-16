@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let number = '<table width=800 border=1 cellpadding=10 cellspaning=0 >'
+    let i, j;
+    debugger;
+    for (i = 2; i < 10; i++) {
+        number += '<tr>'
+        for (j = 1; j <= 10; j++){
+            number += '<td>' + i + 'x' + j + '=' + i * j + '</td>';
+    }
+    number += '</tr>'
+    }
+
+    number += '</table>'
+    document.write(number)
+</script>
+</body>
+</html>

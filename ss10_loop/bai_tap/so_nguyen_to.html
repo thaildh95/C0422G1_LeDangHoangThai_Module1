@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let sl = 0;
+    let giatri = 2;
+    console.log(giatri);
+    while (sl!=20)
+    {
+        let kq = true;
+
+
+        let kt = giatri - 1;
+        for(kt;kt>1;kt--)
+        {
+            if(giatri % kt == 0) {
+                kq = false;
+            }
+        }
+
+        if(kq == true)
+        {
+            document.write(giatri + "<br>");
+            sl++;
+        }
+
+        giatri ++;
+
+    }
+
+</script>
+</html>
