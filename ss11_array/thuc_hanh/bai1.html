@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="in">
+<button type="button" value="add" onclick="addarray()">add</button>
+<button type="button" value="display" onclick="adddisplay()">display</button>
+<p id=result>.....</p>
+</body>
+<script>
+
+
+    let array = []
+    let x = 0
+
+    function addarray() {
+        array[x] = document.getElementById('in').value
+        alert('Element : ' + array[x] + 'added ' + x)
+        x++
+        document.getElementById('in').value = ''
+
+
+    }
+
+    function adddisplay() {
+        let e = ''
+        for (i=0 ; i< array.length; i++)
+        {
+            e += 'element' + i + '=' + array[i] + '<br>'
+
+        }
+        document.getElementById('result').innerHTML = e;
+
+
+    }
+</script>
+</html>

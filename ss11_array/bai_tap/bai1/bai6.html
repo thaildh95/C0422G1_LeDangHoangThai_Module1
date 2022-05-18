@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('moi nhap so luong phan tu')
+    let v = prompt('moi nhap so v')
+    let arr = []
+    let a = 0
+    for (let i = 0; i < number; i++) {
+        arr[i] = prompt(' nhap phan tu  [ ' + arr + ' ] ')
+        for (i = 0; i < arr.length; i++) {
+            if(v==arr[i]) {
+                    a++
+                document.write( v + ' da co trong mang')
+                break;
+            } else {
+                document.write( v + ' khong co trong mang ')
+            }
+
+        } } document.write(arr + '<br>')
+
+
+</script>
+
+</body>
+</html>

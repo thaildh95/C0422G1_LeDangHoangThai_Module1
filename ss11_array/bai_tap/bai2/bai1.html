@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let number = prompt('moi nhap so luong phan tu mang 1')
+    let arr = []
+    for (let i = 0; i < number; i++) {
+        arr[i] = prompt(' nhap phan tu  [ ' + arr + ' ] ')
+    }
+    document.write(arr + '<br>')
+
+    let number1 = prompt('moi nhap so luong phan tu mang 2')
+    let arr1 = []
+    for (let i = 0; i < number1; i++) {
+        arr1[i] = prompt(' nhap phan tu  [ ' + arr1 + ' ] ')
+    }
+
+    document.write(arr1 + '<br>')
+
+    for (let a = 0; a < number; a++) {
+        document.write(a + "<br>")
+        for (let b = 0; b < number1; b++) {
+            document.write( arr[a][b] + "<br>")
+        }
+        document.write("<br>")
+    }
+</script>
+
+</body>
+</html>
