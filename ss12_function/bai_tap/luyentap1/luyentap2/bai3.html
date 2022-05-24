@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+    <style>
+        div{
+            margin: 20px auto;
+            padding: 0px;
+            border: 2px solid aqua;
+            background: blue;
+            color: white;
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            box-shadow: 2px 2px 10px black;
+
+
+        }
+        input{
+            margin-left: 50px;
+            text-align: left 50px;
+            width: 200px;
+        }
+        td{
+           text-align: left 50px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<table>
+    <tr>
+        <td>
+            Nhập số giai thừa
+        </td>
+        <td>
+            <input type="number" id="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check_calculate()" id="calculate" >Kết quả là </button>
+        </td>
+        <td>
+            <input type="result" id="result">
+        </td>
+    </tr>
+    <script>
+        function check_calculate() {
+            let number = document.getElementById("number").value;
+            let result = 1;
+            for ( i =1 ; i<= number; i++){
+                result *=  i ;
+            }
+            document.getElementById("result").value= " Giai thừa là " + result;
+        }
+    </script>
+</table>
+</div>
+</body>
+</html>

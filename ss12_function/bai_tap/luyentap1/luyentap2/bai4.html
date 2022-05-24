@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+    <style>
+        table{
+            margin: 20px auto;
+            padding: 0px;
+            border: 2px solid aqua;
+            text-align: center;
+            background: blue;
+            color: white;
+            box-shadow: 2px 2px 5px;
+            height: 200px;
+            width: 300px;
+
+        }
+        button{
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Nhập ký tự vào
+        </td>
+        <td>
+            <input type="text" id="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check_result()" > Kiểm tra ký tự</button>
+        </td>
+        <td>
+            <p id="result">  </p>
+        </td>
+    </tr>
+
+</table>
+<script>
+    function check_result() {
+        let number = document.getElementById("text").value;
+        if (number%number==0){
+            document.getElementById("result").innerText= " true";
+        }else {
+            document.getElementById("result").innerText= " false";
+        }
+    }
+</script>
+</body>
+</html>
