@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Lamp {
+        constructor(status) {
+            this.status = status
+        }
+
+        getStatus() {
+            return this.status
+        }
+    }
+
+    class Button {
+        constructor(lamp, status) {
+            this.lamp = lamp;
+            this.status = status;
+
+        }
+
+        getLamp() {
+            return this.lamp;
+        }
+
+        setLamp(valuep) {
+            thislamp = lamp
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        setStatus(status) {
+            this.status = status;
+        }
+
+        turnOn() {
+            this.lamp.status = true
+            return this.status = true
+        }
+
+        connectLamp(lamp) {
+            return this.lamp = lamp
+
+        }
+
+        turnOff() {
+            this.lamp.status = false
+            return this.status = false
+        }
+    }
+
+    let lamp = new Lamp(false)
+    let button = new Button(lamp, false)
+
+    document.write(button.turnOn() + '<br>')
+    document.write(lamp.getStatus() + '<br>')
+    document.write(button.turnOff() + '<br>')
+    document.write(lamp.getStatus() + '<br>')
+</script>
+</body>
+</html>
